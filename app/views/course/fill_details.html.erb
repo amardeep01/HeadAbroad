@@ -1,0 +1,249 @@
+<h1>Course#fill_details</h1>
+<p>Find me in app/views/course/fill_details.html.erb</p>
+
+<style type="text/css">
+	table
+	{
+		width:400px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	tr:nth-child(odd)
+	{
+		background:#e5e5e5;
+		color:#444;
+	}
+	tr:nth-child(even)
+	{
+		background:#444;
+		color:#e5e5e5;
+	}
+	input{
+		width:200px;
+	}
+</style>
+<%= form_for :course,:url=>{:action=>"create"} do |f|%>
+<table>
+
+	<tr>
+		<td>
+			University_id:-
+		</td>
+		<td>
+			<%= f.text_field("university_id")  %>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Name:-
+		</td>
+		<td>
+			<%= f.text_field("name")  %>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Duration:-
+		</td>
+		<td>
+			<%= f.text_field("duration")  %>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Tuition_fee:-
+		</td>
+		<td>
+			<%= f.text_field("tuition_fee")  %>	
+		</td>
+		</tr>
+		<tr>
+		<td>
+			Hostel_fee:-
+		</td>
+		<td>
+			<%= f.text_field("hostel_fee")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Twelfth:-
+		</td>
+		<td>
+			<%= f.text_field("twelfth")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Bachelors:-
+		</td>
+		<td>
+			<%= f.text_field("bachelors")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			GRE:-
+		</td>
+		<td>
+			<%= f.text_field("gre")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			GMAT:-
+		</td>
+		<td>
+			<%= f.text_field("gmat")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Acceptance_ratio:-
+		</td>
+		<td>
+			<%= f.text_field("acceptance_ratio")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			MELAB:-
+		</td>
+		<td>
+			<%= f.text_field("melab")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			CAE:-
+		</td>
+		<td>
+			<%= f.text_field("cae")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			CAEL:-
+		</td>
+		<td>
+			<%= f.text_field("cael")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			SAT:-
+		</td>
+		<td>
+			<%= f.text_field("sat")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			IELTS:-
+		</td>
+		<td>
+			<%= f.text_field("ielts")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			TOEFL:-
+		</td>
+		<td>
+			<%= f.text_field("toefl")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			PTE:-
+		</td>
+		<td>
+			<%= f.text_field("pte")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			LOR:-
+		</td>
+		<td>
+			<%= f.text_area("lor")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Essay:-
+		</td>
+		<td>
+			<%= f.text_area("essay")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			CV:-
+		</td>
+		<td>
+			<%= f.text_area("cv")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Document_required:-
+		</td>
+		<td>
+			<%= f.text_area("document_required")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Application_link:-
+		</td>
+		<td>
+			<%= f.text_area("application_link")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Application_fee:-
+		</td>
+		<td>
+			<%= f.text_field("application_fee")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Deadlines:-
+		</td>
+		<td>
+			<%= f.text_area("deadlines")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Average:-
+		</td>
+		<td>
+			<%= f.text_area("average")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Additional_info:-
+		</td>
+		<td>
+			<%= f.text_area("additional_info")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+
+		</td>
+		<td>
+			<%= submit_tag("Insert")  %>
+		</td>
+	</tr>
+
+</table>	
+<% end %>

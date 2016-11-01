@@ -1,0 +1,135 @@
+<h1>University#new</h1>
+<p>Find me in app/views/university/new.html.erb</p>
+
+<style type="text/css">
+	table
+	{
+		width:400px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	tr:nth-child(odd)
+	{
+		background:#e5e5e5;
+		color:#444;
+	}
+	tr:nth-child(even)
+	{
+		background:#444;
+		color:#e5e5e5;
+	}
+	/*input{
+		width:50px;
+	}*/
+</style>
+<%= form_for :university,:url=>{:action=>"create"} do |f|%>
+<table>
+
+	<tr>
+		<td>
+			Name:-
+		</td>
+		<td>
+			<%= f.text_field("name")  %>
+			
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Description:-
+		</td>
+		<td>
+			<%= f.text_area("description")  %>	
+		</td>
+		</tr>
+		<tr>
+		<td>
+			Contact:-
+		</td>
+		<td>
+			<%= f.text_field("contact")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Email:-
+		</td>
+		<td>
+			<%= f.text_field("email")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Acceptance_ratio:-
+		</td>
+		<td>
+			<%= f.text_field("acceptance_ratio")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Address:-
+		</td>
+		<td>
+			<%= f.text_area("address")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			City:-
+		</td>
+		<td>
+			<%= f.text_field("city")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			State:-
+		</td>
+		<td>
+			<%= f.text_field("state")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Country:-
+		</td>
+		<td>
+			<%= f.text_field("country")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Pin:-
+		</td>
+		<td>
+			<%= f.text_field("pin")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Rating:-
+		</td>
+		<td>
+			<%= f.text_field("rating")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Logo:-
+		</td>
+		<td>
+			<%= f.text_field("logo")  %>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			
+		</td>
+		<td>
+			<%= submit_tag("Insert")  %>
+		</td>
+	</tr>
+
+</table>	
+<% end %>

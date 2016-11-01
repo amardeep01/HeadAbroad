@@ -1,0 +1,109 @@
+<style type="text/css">
+	table
+	{
+		width:400px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	tr:nth-child(odd)
+	{
+		background:#e5e5e5;
+		color:#444;
+	}
+	tr:nth-child(even)
+	{
+		background:#444;
+		color:#e5e5e5;
+	}
+</style>
+<h1>Course#list</h1>
+<p>Find me in app/views/course/list.html.erb</p>
+<table>
+	<% @course.each do |course| %>
+	<tr>
+		<td>
+			<%= course.name %>
+		</td>
+		<td>
+			<%= course.tuition_fee %>
+		</td>
+		<td>
+			<%= course.hostel_fee %>
+		</td>
+		<td>
+			<%= course.twelfth %>
+		</td>
+		<td>
+			<%= course.bachelors %>
+			
+		</td>
+		<td>
+			<%= course.gre %>
+		</td>
+		<td>
+			<%= course.gmat %>
+		</td>
+		<td>
+			<%= course.acceptance_ratio %>
+		</td>
+		<td>
+			<%= course.melab %>
+		</td>
+		<td>
+			<%= course.cae %>
+		</td>
+		<td>
+			<%= course.cael %>
+		</td>
+		<td>
+			<%= course.sat %>
+		</td>
+		<td>
+		<td>
+			<%= course.ielts %>
+		</td>
+		<td>
+		<td>
+			<%= course.toefl %>
+		</td>
+		<td>
+		<td>
+			<%= course.pte %>
+		</td>
+		<td>
+		<td>
+			<%= course.lor %>
+		</td>
+		<td>
+		<td>
+			<%= course.essay %>
+		</td>
+		<td>
+			<%= course.cv %>
+		</td>
+		<td>
+			<%= course.document_required %>
+		</td>
+		<td>
+			<%= course.application_link %>
+		</td>
+		<td>
+			<%= course.application_fee %>
+		</td>
+		<td>
+			<%= course.deadlines %>
+		</td>
+		<td>
+			<%= course.average %>
+		</td>
+		<td>
+			<%= course.additional_info %>
+		</td>
+			<%= link_to("Delete",{:action=>'delete',:id=>course.id}) %>
+		</td>
+		</td>
+			<%= link_to("Edit",{:action=>'edit',:id=>course.id}) %>
+		</td>
+	</tr>
+	<% end %>
+</table>	
