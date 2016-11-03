@@ -11,15 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160925062618) do
+ActiveRecord::Schema.define(version: 20161102145252) do
 
   create_table "courses", force: :cascade do |t|
     t.integer  "university_id",     limit: 4
     t.string   "name",              limit: 60
+    t.string   "duration",          limit: 30
     t.string   "tuition_fee",       limit: 15
     t.string   "hostel_fee",        limit: 15
-    t.string   "twelfth",           limit: 10
-    t.string   "bachelors",         limit: 10
+    t.string   "twelfth",           limit: 30
+    t.string   "bachelors",         limit: 30
     t.string   "gre",               limit: 50
     t.string   "gmat",              limit: 20
     t.string   "acceptance_ratio",  limit: 20
@@ -41,6 +42,11 @@ ActiveRecord::Schema.define(version: 20160925062618) do
     t.text     "additional_info",   limit: 65535
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
+  end
+
+  create_table "mains", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "universities", force: :cascade do |t|

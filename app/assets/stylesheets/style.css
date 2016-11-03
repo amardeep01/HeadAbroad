@@ -20,7 +20,8 @@
 }
 
 /*Navbar Style STARTS here*/
-section#contact{background:url('../img/contact2.png') no-repeat 100% 100%; background-size:cover ; background-attachment: fixed; }
+section#contact{position:relative;z-index:3;background:url('contact2.png') no-repeat 100% 100%; background-size: cover ; background-attachment: fixed; }
+.bck{background: #000; position: relative; opacity:0.8; z-index:4;}
 section{
 	position: relative !important;
 	width:100% !important;
@@ -31,7 +32,7 @@ section{
 section#banner{
 	/*height:100vh !important;*/
 	top:0%;
-	background:url("../img/banner.jpg") no-repeat 100% 100%;
+	background:url("banner.jpg") no-repeat 100% 100%;
     background-size:cover;
 	background-attachment:fixed;
 	/*background-size: 100% 95%;*/
@@ -39,7 +40,7 @@ section#banner{
 }
 section#Top-unversity{
 	top:100%;
-	/*background:url("../img/2.jpg") no-repeat 100% 100%;*/
+	/*background:url("2.jpg") no-repeat 100% 100%;*/
 	background-attachment:fixed;
 	background-size: 100% 100%;
     z-index:-1;

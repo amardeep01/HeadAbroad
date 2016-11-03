@@ -1,7 +1,7 @@
 	class UniversityController < ApplicationController
 	
 	def fill_details
-			
+					
 	end
 
 	def scountry

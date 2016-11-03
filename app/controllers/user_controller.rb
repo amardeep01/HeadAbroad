@@ -3,6 +3,13 @@ class UserController < ApplicationController
 			
 	end
 
+	def header
+		
+	end
+		
+	def banner
+		
+	end
 
 	def list
 		@user= User.all

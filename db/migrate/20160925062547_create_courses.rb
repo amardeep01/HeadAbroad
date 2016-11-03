@@ -2,7 +2,7 @@ class CreateCourses < ActiveRecord::Migration
   def change
     create_table :courses do |t|
         t.integer :university_id
-    	t.string :name , :limit=> 60
+    	t.string :name , :limit=> 60 
         t.string :duration :limit=>200
     	t.string :tuition_fee, :limit=>15
     	t.string :hostel_fee, :limit=>15

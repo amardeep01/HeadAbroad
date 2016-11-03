@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'main/search'
+
+  get 'main/home'
+
+  get 'main/login'
+
+  get 'main/agentLogin'
+
   get 'university/fill_details'
   get 'university/list'
   post 'university/scountry'
@@ -9,7 +17,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#header'
+  root 'user#header'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
