@@ -88,6 +88,71 @@
   </div>
 </div>
 <!-- Modal content ENDZ here -->
+<!-- Modal University starts here here  -->
+<div id="University" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        	<h1 class="modal-title text-center">University</h1>
+      </div>
+      <div class="modal-body" id="load_external">
+        <section class="content bgcolor-1 back" >
+			<span class="input input--nao">
+				<input class="input__field input__field--nao" type="email" id="input-1" />
+				<label class="input__label input__label--nao" for="input-1">
+					<span class="input__label-content input__label-content--nao">University Name</span>
+				</label>
+				<svg class="graphic graphic--nao" width="400%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+					<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+				</svg>
+			</span>
+		</section>
+      </div>
+      <div class="modal-footer push-left">
+        <!-- <button type="button" class="btn btn-success btn-lg" data-dismiss="modal">Search</button> -->
+        <%= link_to("Search", {:action=>'search'}) %>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal University ENDZ here -->
+
+<!-- Modal Course starts here here  -->
+<div id="Course" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        	<h1 class="modal-title text-center">Course</h1>
+      </div>
+      <div class="modal-body" id="load_external">
+        <section class="content bgcolor-1 back" >
+			<span class="input input--nao">
+				<input class="input__field input__field--nao" type="email" id="input-1" />
+				<label class="input__label input__label--nao" for="input-1">
+					<span class="input__label-content input__label-content--nao">Course Name</span>
+				</label>
+				<svg class="graphic graphic--nao" width="400%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+					<path d="M0,56.5c0,0,298.666,0,399.333,0C448.336,56.5,513.994,46,597,46c77.327,0,135,10.5,200.999,10.5c95.996,0,402.001,0,402.001,0"/>
+				</svg>
+			</span>
+		</section>
+      </div>
+      <div class="modal-footer push-left">
+        <!-- <button type="button" class="btn btn-success btn-lg" data-dismiss="modal">Search</button> -->
+        <%= link_to("Search", {:action=>'search'}) %>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal University ENDZ here -->
 
 <!-- Navigation Part STARTS here -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -106,14 +171,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse slide navbar-right text-center">
       <ul class="nav navbar-nav">
-      	<li class="content bgcolor-3 ">
-			<span class="input input--makiko rounded">
-				<input class="input__field input__field--makiko" type="text" id="input-16" />
-				<label class="input__label input__label--makiko" for="input-16">
-					<span class="input__label-content input__label-content--makiko">University / Course</span>
-				</label>
-			</span>
-		</li>
+      		<li>
+      			<a href="#University" data-toggle="modal" data-target="#University">
+					<button type="button" class="btn btn-success letter-space"> University </button>				
+				</a>
+			</li>				
+      		<li>
+      			<a href="#Course" data-toggle="modal" data-target="#Course">
+					<button type="button" class="btn btn-success letter-space"> Course </button>
+				</a>
+			</li>		
         <li><a href="#"> What's New </a></li>
         <li><a href="#"> Need Agent </a></li>
         <li class="page_name" title="login"> <a href="#login" data-toggle="modal" title="login" data-content="Login Content inside the popover"> <i class="fa fa-user fa-2x user-padding"> </i> </a> </li>

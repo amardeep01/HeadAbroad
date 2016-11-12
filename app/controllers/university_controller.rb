@@ -5,7 +5,17 @@
 	end
 
 	def scountry
-		
+		@country = params[:country]
+		@university= University.find_by_country(@country)
+	end
+
+	def search
+		@id = params[:id]
+		@university = University.where("name like'%start'")
+	end
+
+	def showUniversity
+		render 'showUniversity'
 	end
 
 	def login

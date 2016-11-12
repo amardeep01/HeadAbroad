@@ -11,6 +11,10 @@ class UserController < ApplicationController
 		
 	end
 
+	def search
+		
+	end
+
 	def list
 		@user= User.all
 	end

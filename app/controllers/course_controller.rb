@@ -3,6 +3,10 @@ class CourseController < ApplicationController
 			
 	end
 
+	def search
+		@course = Course.where("name like'%start'")
+	end
+
 	def scourse
 		@course=params[:name]
 		@course=Course.find(@name)		
