@@ -1,11 +1,12 @@
 class UserController < ApplicationController
+	# layout :application, only: [:login]
+
 	def fill_detail
 			
 	end
 
-	def header
-		
-	end
+	
+	
 		
 	def banner
 		

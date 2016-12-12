@@ -1,8 +1,5 @@
 	class UniversityController < ApplicationController
 	
-	def fill_details
-					
-	end
 
 	def scountry
 		@country = params[:country]
@@ -14,13 +11,42 @@
 		@university = University.where("name like'%start'")
 	end
 
+	def search_by_ielts
+		@univeristy_name = params[:univeristy_name]
+		@universities = University.where("ielts=?","#{@university_name}")
+		render 'search_by_ielts'
+	end
+
+	def search_by_toefl
+		@univeristy_name = params[:univeristy_name]
+		@universities = Univeristy.where("toefl=?","#{@univeristy_name}")
+		render 'showuniveristy'
+	end
+
+	def search_by_gre
+		@univeristy_name = params[:univeristy_name]
+		@universities = Univeristy.where("gre=?","#{@univeristy_name}")
+		render 'showuniveristy'
+	end
+	def search_by_name
+		@univeristy_name = params[:univeristy_name]
+		@universities = Univeristy.where("name=?","#{@univeristy_name}")
+		render 'showuniveristy'
+	end
+
 	def showUniversity
+		@university_name = params[:university_name]
+		@universities = University.where("name like ?","%#{@university_name}%")
 		render 'showUniversity'
 	end
 
-	def login
-			
+
+	def search_by_country
+		@university_name = params[:university_name]
+		@universities = University.where("country=?","#{@university_name}")
+		render 'showUniversity'
 	end
+
 
 	def list
 		@university= University.all
